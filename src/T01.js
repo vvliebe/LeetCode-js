@@ -5,17 +5,17 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(nums, target) {
-    var map = {}
-    for (var i = 0; i < nums.length; i++) {
-      var left = target - nums[i]
-      if (map[nums[i]] !== undefined) {
-        return [map[nums[i]], i]
-      } else {
-        map[left] = i
-      }
+var twoSum = function (nums, target) {
+  var map = {}
+  for (var i = 0; i < nums.length; i++) {
+    var left = target - nums[i]
+    if (map[nums[i]] !== undefined) {
+      return [map[nums[i]], i]
+    } else {
+      map[left] = i
     }
-    return []
+  }
+  return []
 };
 
 console.log(twoSum([1, 2, 5, 9], 11))

@@ -3,7 +3,7 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function(s) {
+var lengthOfLongestSubstring = function (s) {
   var maxLen = 0
   var startIndex = 0
   var visit = {}

@@ -9,11 +9,11 @@ function ListNode(val) {
  * @param {ListNode} l2
  * @return {ListNode}
  */
-var addTwoNumbers = function(l1, l2) {
+var addTwoNumbers = function (l1, l2) {
   var sum = new ListNode(0)
   var result = sum
   var extra = 0;
-  while(l1 && l2) {
+  while (l1 && l2) {
     result.next = new ListNode(0)
     result = result.next
     var val = l1.val + l2.val + extra
@@ -27,7 +27,7 @@ var addTwoNumbers = function(l1, l2) {
     l1 = l1.next
     l2 = l2.next
   }
-  while(l1) {
+  while (l1) {
     result.next = new ListNode(0)
     result = result.next
     var val = l1.val + extra
@@ -40,7 +40,7 @@ var addTwoNumbers = function(l1, l2) {
     }
     l1 = l1.next
   }
-  while(l2) {
+  while (l2) {
     result.next = new ListNode(0)
     result = result.next
     var val = l2.val + extra
@@ -67,7 +67,7 @@ l2.next = new ListNode(2)
 
 var res = addTwoNumbers(l1, l2)
 
-while(res) {
+while (res) {
   console.log('res.val => ', res.val)
   res = res.next
 }
